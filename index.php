@@ -27,6 +27,24 @@
                 </a>
             </div>
         </nav>
+
+        <div class="containers-albums">
+            <div class="albums">
+                <div v-for="album in albums" class="card border-0">
+    
+                    <div class="dimension">
+                        <img :src="album.poster" class="card-img-top" :alt="album.title">
+    
+                        <div class="card-body">
+                            <h4 class="album-title fw-bold text-center">{{ album.title }}</h4>
+                            <h5 class="album-author fw-light text-center">{{ album.author }}</h5>
+                            <h6 class="album-year fw-bold text-center">{{ album.year }}</h6>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
     </div>
 
 

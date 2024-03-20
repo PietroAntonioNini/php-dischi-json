@@ -5,7 +5,10 @@
 }
 /* reset */
 
+/* navbar */
+
 .navbar {
+    height: 100px;
     background-color: #07131F;
 }
 
@@ -15,4 +18,58 @@
 
 .brand img {
     width: 80px;
+    margin-bottom: 15px;
 }
+
+/* fine navbar */
+
+
+/* albums */
+
+.containers-albums {
+    height: calc(100vh - 100px);
+    background-color: #1E2C3C;
+    padding: 70px 300px;
+}
+
+.albums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 90px;
+    margin: auto;
+}
+
+.card {
+    max-width: calc(100% / 3);
+}
+
+.dimension {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 30px 90px;
+    background-color: #102031;
+}
+
+.dimension img {
+    min-width: 100px;
+    max-width: 300px;
+
+}
+
+.card-body h4 {
+    max-width: 270px;
+}
+
+
+
+
+
+
+
+
+
+/* fine albums */
