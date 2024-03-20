@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset */
+
+.navbar {
+    background-color: #07131F;
+}
+
+.brand {
+    padding: 40px 200px;
+}
+
+.brand img {
+    width: 80px;
+}
