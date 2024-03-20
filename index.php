@@ -30,7 +30,7 @@
 
         <div class="containers-albums">
             <div class="albums">
-                <div v-for="album in albums" class="card border-0">
+                <div v-for="(album, index) in albums" class="card border-0" @click="showAlbumDetails(index)">
     
                     <div class="dimension">
                         <img :src="album.poster" class="card-img-top" :alt="album.title">
@@ -44,7 +44,20 @@
     
                 </div>
             </div>
-        </div>
+
+            <!-- Album da mostrare solo quando selectedAlbum non è vuoto -->
+            <div class="modal" v-show="select = true">
+                <span class="close-btn" @click="select = false">&times;</span>
+                <div class="dimension">
+                    <img :src="selectedAlbum.poster" class="card-img-top" :alt="selectedAlbum.title">
+
+                    <div class="card-body">
+                        <h4 class="album-title fw-bold text-center">{{ selectedAlbum.title }}</h4>
+                        <h5 class="album-author fw-light text-center">{{ selectedAlbum.author }}</h5>
+                        <h6 class="album-year fw-bold text-center">{{ selectedAlbum.year }}</h6>
+                    </div>
+                </div>
+            </div>
     </div>
 
 
